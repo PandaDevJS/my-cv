@@ -18,19 +18,27 @@ body p {
 }
 
 body {
-  /* background: url("../images/backgrount.png"); */
-  background-color: #ccc;
-  z-index: -1;
+  background: url("../images/backgrount.png");
+  /* background-color: #ccc; */
 }
 :root {
   --var-color-heading: #333;
   --var-color-text: #777;
+}
+.mgt_15 {
+  margin-top: 15px;
 }
 .pd-15 {
   padding: 15px;
 }
 .pd-30 {
   padding: 30px;
+}
+.pd_left_30 {
+  padding-left: 30px;
+}
+.pf_left_0 {
+  padding-left: 0;
 }
 .pt-15 {
   padding-top: 15px;
@@ -49,12 +57,46 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
-
+.mlr_0 {
+  margin-left: 0;
+  margin-right: 0;
+}
 .mg-0 {
   margin: 0;
 }
 .border_left {
+  left: 0;
   border-left: 1px solid #efefef;
+}
+.fadeInLeft {
+  animation: fadeInLeft 1s linear forwards;
+}
+.fadeOutLeft {
+  animation: fadeOutLeft 1s linear forwards;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes fadeOutLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -200px;
+  }
 }
 @keyframes fadeInMenu {
   from {
