@@ -878,7 +878,12 @@
   border-radius: 29px;
   color: #000;
   font-size: 14px;
+  font-weight: 500;
   background-color: #ffc500;
+}
+.post-btn:hover {
+  cursor: pointer;
+  background-color: #ffb100;
 }
 
 .categories .title {
